@@ -6,9 +6,9 @@ const wordCounter = (value) => {
 
   if (value) {
     // COMPLETE THE LOGIC 
-    let arr = value.split(" ");
-      console.log(arr);  
-    let count = arr.filter(word => word !== '').length;
+    let arr = value.split(" "); //this turns the value into an array (arr) and takes out spaces (" ")
+      console.log(arr);  //just a test to make sure the array is correct
+    let count = arr.filter(word => word !== '').length; //creates a new variable (count) that filters the words in arr to make sure they are indeed words, and counts the length of arr once filtered
     wordCount.innerHTML = `Word Count: ${count}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
